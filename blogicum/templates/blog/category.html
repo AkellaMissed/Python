@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru"> 
+  <head>    
+    {% include "includes/head.html" %}
+    <title>Публикации в категории - {{ category.text }}</title>
+  </head>
+  <body>	   
+    <header>
+      {% include "includes/header.html" %}
+    </header>
+    <main>
+      <div class="container py-5">
+        <h1>Публикации в категории - {{ category.text }}</h1>
+      </div>
+    </main>
+    <footer class="border-top text-center py-3">
+      <p>© Блогикум</p>    
+    </footer>
+  </body>
+</html>
